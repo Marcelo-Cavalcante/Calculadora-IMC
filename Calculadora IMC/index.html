@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+    <style>
+        body {
+            background-color: #cffafe;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        // var nome = prompt("Digite seu Nome");
+        // var num1 = Number( prompt("Digite seu peso " ));
+        // var num2 = Number( prompt("Digite sua altura" ));
+        // var imc = num1 / (num2 * num2);
+        // document.write(" imc " + imc + "");     
+
+        var nome = prompt("Digite seu nome");
+        var peso = Number(prompt("Digite seu peso "));
+        var altura = Number(prompt("Digite sua altura"));
+        var imc = peso / (altura * altura);
+
+        // if (imc < 18.5) {
+        //     document.write("Olá " + nome + "! Seu IMC é " + imc.toFixed(2) + ". Você está abaixo do peso ideal.");
+        // } else if (imc >= 18.5 && imc < 25) {
+        //     document.write("Olá " + nome + "! Seu IMC é " + imc.toFixed(2) + ". Você está no peso ideal.");
+        // } else if (imc >= 25 && imc < 30) {
+        //     document.write("Olá " + nome + "! Seu IMC é " + imc.toFixed(2) + ". Você está acima do peso ideal.");
+        //     if (peso > 70) {
+        //         document.write("E você está com obesidade mórbida.");
+        //     } else {
+        //         document.write("E você está com obesidade.");
+        //     }
+
+        
+            document.write("Nome: " + nome + "<br>" + "Seu peso é: " + peso + "<br>" + "Sua altura é: " + altura + "<br>" + "Seu IMC é: " + imc.toFixed(2) + ".");
+        
+
+
+    </script>
+</body>
+
+</html>
